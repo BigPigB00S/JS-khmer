@@ -1,0 +1,31 @@
+# JavaScript Khmer
+
+→JavaScript run short cut run in terminal:
+
+node what folder name and / and name
+cd: change directoly
+cd - : back to main folder
+node --watch and put the folder name : it mean when you change the code the terminal also run
+
+→variable:
+	var: you can put in these
+
+-> variable declarion rules:
+	-var can't put number infront
+
+-> var let cosnt
+	let & cosnt is block-scope
+	let(when we decale we can resign the variable
+	const(we can't resign)
+
+->operators
+	(= += -= *= /= ++ --)
+	++x(is call pre-increment)
+	x++(is call post-increment)
+
+->Data types
+	in JavaScript have 2:
+	->Primitive:String,Number,Boolean,Null,Undefiend,Symbol(es6)
+	->None-primitive(object) : Function,Array,object
+
+->Higher Order:
