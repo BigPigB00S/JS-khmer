@@ -182,6 +182,7 @@ console.log(obj, newObj)
 
 //conditional statement (if/else)
 //<> <= >= == === != !== !
+/*
 let x = "20";
 let y = 20;
 const condition = x == y;
@@ -190,6 +191,42 @@ if (condition){
     console.log("This is true");
 }else {
     console.log("This is false");
-
 }
+*/
+
+//&& ||
+/*
+const isFreeTime = false;
+const hasMoney = true;
+if (isFreeTime || hasMoney) {
+    console.log("Traveling");
+}else{
+    console.log("Stay Home!");
+}
+*/
+
+
+//Truthy & Falsy 
+// "" 0 null undefined NaN (falsy)
+/*
+const condition = "20a" * 40;
+
+if(condition) {
+    console.log("True");
+}else {
+    console.log("false")
+}
+*/
+
+//Ternary Operator
+function aging(age){
+
+    // if(age >= 18){
+    //     return "Adult";
+    // }else {
+    //     return "Still young"
+    // }
+}
+console.log(again(10));
+
 
