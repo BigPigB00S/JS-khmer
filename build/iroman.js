@@ -218,15 +218,24 @@ if(condition) {
 }
 */
 
-//Ternary Operator
-function aging(age){
+//Ternary Operator(it only true and false)
+/*
+const aging = (age) => (age <= 20 ? "Adult" :  "young");
+console.log(aging(30));
+*/
 
-    // if(age >= 18){
-    //     return "Adult";
-    // }else {
-    //     return "Still young"
-    // }
+//switch
+//case break default
+
+const enrollment = 0;
+switch(enrollment){
+    case 1:
+        console.log("One Enroll");
+        break;
+        case 2:
+            console.log("Two Enroll");
+            break;
+            default:
+                console.log("No enroll")
 }
-console.log(again(10));
-
 
