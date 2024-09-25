@@ -226,7 +226,7 @@ console.log(aging(30));
 
 //switch
 //case break default
-
+/*
 const enrollment = 0;
 switch(enrollment){
     case 1:
@@ -239,5 +239,70 @@ switch(enrollment){
                 console.log("No enroll")
 }
 console.log("hello ");
+*/
+//while loop 
+/*
+let n = 0;
+
+while(n < 10){
+    console.log(n)
+    n++;
+}
+*/
+
+//Do While loop
+//if false it also work
+/*
+let n = 10;
+
+do{
+    console.log(n);
+    n++;
+}while(n < 10)
+*/
+
+//For loop
+/*
+let i = 10;
+for(i; i >= 0; i--){
+    console.log(i);
+}
+*/
+
+//Exercise Loop 1
+/*
+const names = ["Sok", "Meng", "Chea", "Nang"];
+
+for(let i = 0; i < names.length; i++){
+    console.log(names[i])
+}
+*/
+
+//Exercise loop 2 
+
+const students =  [
+    {
+        name: "BigPig",
+        score: 88,
+    },
+    {
+        name: "Sam",
+        score: 98,
+    },
+    {
+        name: "Golo",
+        score: 70,
+    },
+    {
+        name: "Som",
+        score: 90,
+    },
+];
+
+let i = 0;
+while(i<students.length){
+    console.log(students[i]);
+    i++
+}
 
 
