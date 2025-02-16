@@ -1,0 +1,1076 @@
+-->:statement & comment
+	-console.log("Hello");
+	-console.log("World");
+-------------------------------
+
+-->:Variable
+
+	-var name = "BigPig";
+	-console.log("hello", name);
+	-console.log(name,"how are you?");
+	-console.log("hello old are you", name);
+---------------------------------------------------
+
+-->:var let const
+	-let const (block-scope);
+	-let n = 10;
+	-n = 60;
+	-n = 100;
+	-console.log(n);
+-------------------------------------
+
+-->:var (function-scope)
+
+	if(true){
+    	var result = "False";
+	}
+	console.log(result);
+	function myFunc() {
+    		var x = 30;
+    		console.log(x);
+	}
+----------------------------------------
+
+-->:string concatenation(ការតភ្ជាប់ string)
+
+	const name = "BigPig";
+	const job = " student";
+	const text = `Hello ${name + job} i know you are alone`	
+	console.log(text);
+------------------------------------------------------------------------
+
+-->number
+
+	-let x = 20;
+	-let y = 100;
+	-let result = x + y;
+	-console.log(result);
+-----------------------------------------
+
+-->:operator 
+	(= += -= *= /= ++ --)
+
+	-let txtOne = "Hello "
+	-let txtTwo = "How are you"
+	-let txtThree = "what up my friend"
+	-txtOne += txtTwo;
+	-console.log(txtOne , txtTwo, txtThree);
+----------------------------------------------------
+
+-->:data types
+	in javascript have:
+		+primitive : String,Number,Boolean,Null, Undefined, Symbol(es6)
+		+None-primitive(object) : Function,Array,object
+
+	-let email = null;
+	-console.log(typeof null)
+	-console.log(typeof "Hello")
+	-console.log(typeof 1)
+------------------------------------------------------------------------------------------
+
+-->:Null vs Undefined
+
+	-const email = null; //nothing mean it tell they is nothing
+                    	   //underfined mean it tell they have somthing but we not yet put 
+	-let  name, age;
+	-console.log(email);
+--------------------------------------------------------------------------------------------------
+
+-->:Function
+
+	-function greeting() {
+    		let name = "BigPig"
+    		console.log("reach")
+    		return `Hello ${name} how are you?`;
+	}
+	-const result = greeting();
+	-console.log(result);
+------------------------------------------------------------
+
+-->:Parameter
+
+	-function greeting(name) {
+    		return `Hello ${name} How are you?`;
+	}
+	-const result = greeting("Noob");
+	-console.log(result); 
+---------------------------------------------------------------
+
+-->:arrow function
+
+	-const myFucation = (x,y) =>{
+    		return  x * y;
+	};
+---------------------------------------
+
+-->:Higher Order & Callback function
+
+	-function greeting(cbf, name) { //higher order function
+    		return `Hello ${cbf(name)} What are you doing?`
+	}
+	-const result = greeting(function (n) {
+    		return n;
+	}, "BigPig");
+	-console.log(result);
+----------------------------------------------------------------------
+
+-->://Array
+
+	-const oldCar = "Ford";
+	-const cars = ["BMW","Toyota","NISSAN",oldCar]; 
+	-cars[1] = "Tesla"
+	-console.log(cars);
+
+-->:object
+
+	-const car = {
+    		model: "BMW",
+    		features: ["a","b"],
+    		ifNew: true,
+    		drive()  {
+        		console.log("driving");
+    		},
+	};
+	-car.model = "Tesla";
+	-console.log(car.features[0]);
+-----------------------------------------------------------------------
+
+-->:object (more)
+
+	-const obj = {name: "Boss", age:24};
+
+	-obj ["name"] = "Boss";
+	-obj ["job"] = "Teacher";
+	-obj ["salary"] = 500;
+
+	-console.log(obj);
+---------------------------------------------------
+
+-->:object as array Iteam 
+
+	-const data = [
+    		{
+        		id: 1,
+        		name: "Bigpig",
+        		age: 24
+    		},
+    	{
+        		id: 2,
+        		name: "Sam",
+        		age: 23
+    		},
+];
+-console.log(data[0].age);
+--------------------------------------------------
+
+-->:Primitive & Non-primitive data type
+
+	let x = 10;
+	let y = x; //y copy x already;
+	x=50; // if you change is x the y also no change;
+
+	console.log(x,y);
+	const obj = { name: "BigPig", age: 26 };
+	const newObj = obj;
+
+	newObj.name = "Sok";
+	console.log(obj, newObj)
+---------------------------------------------------------------
+
+-->:conditional statement (if/else)
+	(<> <= >= == === != !== !)
+
+	let x = "20";
+	let y = 20;
+	const condition = x == y;
+
+	if (condition){
+    		console.log("This is true");
+	}else {
+    		console.log("This is false");
+	}
+--------------------------------------------------
+
+-->:&& ||
+
+	-const isFreeTime = false;
+	-const hasMoney = true;
+	-if (isFreeTime || hasMoney) {
+    		console.log("Traveling");
+	}else{
+    		console.log("Stay Home!");
+	}
+---------------------------------------------------
+
+-->:Truthy & Falsy 
+ 	("" 0 null undefined NaN (falsy))
+
+	-const condition = "20a" * 40;
+
+	-if(condition) {
+    		console.log("True");
+	}else {
+    		console.log("false")
+	}
+----------------------------------------------------
+
+-->:Ternary Operator(it only true and false)
+
+	-const aging = (age) => (age <= 20 ? "Adult" :  "young");
+	-console.log(aging(30));
+-----------------------------------------------------------------------
+
+-->:switch
+	case break default
+
+	-const enrollment = 0;
+	-switch(enrollment){
+    		case 1:
+        		console.log("One Enroll");
+        		break;
+        		case 2:
+            			console.log("Two Enroll");
+            			break;
+            			default:
+                			console.log("No enroll")
+	}
+	-console.log("hello ");
+----------------------------------------------------------------------
+
+-->:while loop 
+
+	let n = 0;
+
+	while(n < 10){
+    		console.log(n)
+    		n++;
+	}
+-----------------------------------
+
+-->:Do While loop
+	if false it also work
+
+	-let n = 10;
+
+	-do{
+    		console.log(n);
+    		n++;
+	}while(n < 10)
+--------------------------------------
+
+-->:For loop
+
+	-let i = 10;
+	-for(i; i >= 0; i--){
+    		console.log(i);
+	}
+---------------------------------------
+
+-->:Exercise Loop 1
+
+	const names = ["Sok", "Meng", "Chea", "Nang"];
+
+	for(let i = 0; i < names.length; i++){
+    		console.log(names[i])
+	}
+----------------------------------------------------------
+
+-->:Exercise loop 2 
+	while loop
+
+	-const students =  [
+    	{
+        	name: "BigPig",
+        	score: 88,
+    	},
+    	{
+        	name: "Sam",
+        	score: 98,
+    	},
+    	{
+       		name: "Golo",
+        	score: 70,
+    	},
+    	{
+        	name: "Som",
+        	score: 90,
+    	},
+];
+
+	-let i = 0;
+	-while(i<students.length){
+    		console.log(`${students[i].name}: ${students[i].score}`);
+    		i++
+	}
+-----------------------------------------------------------------------------------
+
+-->:Excersion loop 2 
+	for loop
+
+	-const students =  [
+    	{
+        	name: "BigPig",
+        	score: 88,
+    	},
+    	{
+        	name: "Sam",
+        	score: 98,
+    	},
+    	{
+       		name: "Golo",
+        	score: 70,
+    	},
+    	{
+        	name: "Som",
+        	score: 90,
+    	},
+];
+
+	let i = 0;
+	for(i; i < students.length; i++){
+    		console.log(`student: ${students[i].name} has ${students[i].score} score.`);
+	}
+----------------------------------------------------------------------------------------------------
+
+-->:string Properties & Methods
+
+	-const txt = "How are you doing today?"
+
+	-console.log(txt.length)//is count the number
+	-console.log(txt.toLowerCase()); //the font small
+	-console.log(txt.toUpperCase()); //the font big
+	-console.log(txt);
+	-console.log(txt.trim()) //ដកគ្នា
+	-console.log(txt.includes("BIG")); //mean you can find the name
+	-if(txt.toLowerCase().includes("big")){
+    		console.log("It true");
+	}
+	-console.log(txt.concat(" ",txt2)); //បូកបញ្ចូលគ្នាពី string 1 ទៅ string 1
+	-const obj = { id: 1};
+	-console.log(obj.id.toString()); បម្លែង code ពីID ទៅជា string វិញ
+--------------------------------------------------------------------------------
+
+-->:methods chaining
+
+	-const text = "hello";
+
+	-if (text.toUpperCase().includes("HELLO")) {
+   		console.log("It's true!");
+	}
+------------------------------------------------------------
+
+-->:methods chaining
+
+	-const text = "hello";
+
+	-if (text.toUpperCase().includes("HELLO")) {
+    		console.log("It's true!");
+	}
+-------------------------------------------------------------
+
+-->:array props & methods
+
+	-const names =  ["Max", "Sam", "Coca","Festaer"];
+
+ 	-names.unshift("Tola"); //បញ្ចូល array នៅខាងមុខ
+ 	-names.push("Som"); //បញ្ចូល array នៅខាងក្រោយ
+ 	-names.shift(); //ដកarrayខាងដើម
+ 	-names.pop(); //ដកarrayខាងចុង
+	-const result = names.slice(1,3); //ដក index ចេញ
+	-names.splice(1, 0,"B");  //ដកor ដាក់ array របស់យើង
+	-console.log(names);
+-----------------------------------------------------------------
+
+-->: for each || Array methods
+	const names =  ["Max", "Sam", "Coca","F"];
+
+	Array.prototype.myForEach = function(cbf) {
+    		for(let i = 0; i < this.length; i++) {
+        
+        	cbf(this[i],i,this);
+    		}
+	};
+
+	names.myForEach(function(item){
+    		console.log(item);
+	});
+
+	// function itemArray(item, index,array){
+	//     console.log(item,index,array);
+	// }
+	// myForEach(itemArray,names);
+-------------------------------------------------------------------
+
+-->: Find Methods
+const userData = [
+    {
+        name: "sok chheng",
+        age:30,
+        job: "Web developed"
+    },
+    {
+        name: "Som Nang",
+        age:20,
+        job: "Teacher"
+    },
+    {
+        name: "Tola",
+        age:18,
+        job: "Video Editor"
+    },
+    {
+        name: "Coca Cola",
+        age:27,
+        job: "Police"
+    },
+    {
+        name: "Messi",
+        age:37,
+        job: "Football"
+    },
+    {
+        name: "sok cheata",
+        age:52,
+        job: "Backend developed"
+    },
+];
+
+const finding = userData.find(function(item){
+    return item.age == 30;
+});
+
+console.log(finding);
+-------------------------------------------------------------
+
+-->:reduce method
+	
+	const salary = [300, 500, 600, 200];
+
+	// a = 0; c = 300 => 300;
+	// a = 300; c = 500 => 800;
+	// a = 800; c = 600 => 1400;
+	// a = 1400; c = 200 => 1600;
+	
+	const total = salary.reduce(function(ac, cr){
+    		return ac + cr;
+	},0);
+	console.log(total);
+
+	// let total = 0;
+
+	// for(let i = 0; i < salary.length; i++){
+	//     //total = total + salary[i];
+	//     total += salary[i];
+	// }
+	// console.log(total);
+-----------------------------------------------------------------------
+
+-->: reduce method (more) //callback function to each element of an array can return all (string,number,object)
+
+const array = ["Big", "PigPro"];
+
+->:first(commond)
+	-ac =empty string; cr = loop1 "Big"
+->:second(commond)
+	-ac = "Big"; cr = loop2 "PigPro" => "BigPigPro"
+
+const fullName = array.reduce(function(ac,cr){
+    return `${ac} ${cr}`;
+});
+console.log (fullName);
+--------------------------------------------------------------------------------------------------------------------
+
+-->: Exercise (show/hide button)
+
+=>: HTML:  <h1 class="heading">BigPig.com</h1>
+    	   <button class="btn"> Show & Hide</button>
+
+=>: JS: const btn = document.querySelector(".btn");
+btn.onclick = function (){
+    const headingStyle = btn.previousElementSibling.style;
+    if( headingStyle.display === "none") {
+        headingStyle.display = "block";
+    }else {
+        headingStyle.display = "none";
+    }
+}; 
+--------------------------------------------------------------------
+
+--> classList:
+	-->: HTML: <div class="box"></div>
+	-->: Style: body {  
+    				height: 100vh;
+			 }
+			.box{
+    				width: 300px;
+    				height: 300px;
+    				border-radius: 50%;
+   	 			background-color: red;
+   	 			margin-top: 0px;
+   	 			opacity: 1;
+    				transition: all 0.3s;
+			}
+			.box.hide{
+   				 opacity: 0;
+    				margin-top: 100px;
+			}
+
+-->: Javascript: const box = document.querySelector(".box");
+
+
+		document.body.onclick = function (){
+   		  box.classList.toggle("hide");
+		};
+
+
+			 +if(box.classList.contains("hide")){
+   				 box.classList.remove("hide");
+			+}else{
+     				box.classList.add("hide");
+			}
+------------------------------------------------------------------------
+
+-->: Text Content
+	HTML: <div class="card">
+        	<h3>Article</h3>
+        	<p>Lorem ipsum dolor sit amet.</p>
+
+    	      </div>
+	Js: const heading = document.querySelector(".card > h3 ");
+
+		heading.textContent = "BigPig";// update
+
+		console.log(heading.textContent);
+-------------------------------------------------------------------------------
+
+-->: getAttributes & setAttributes
+
+	-->: HTML: <h1 id="heading">Hello world</h1>
+    		   <a href="https://www.youtube.com/">link</a>
+
+	-->:CSS: .red-text {
+    			color: red;
+		 }
+ 	-->JS: const heading = document.getElementById("heading");
+
+			heading.setAttribute("class","red-text"); //setAttributes
+
+			console.log(heading.attributes);;
+
+			
+			//getAttributes
+				// const link = document.querySelector("a")
+				// const attributeValue = link.getAttribute("href")
+
+------------------------------------------------------------------------------------------
+
+-->: create Element
+
+	const div = document.createElement("div")
+	const p = document.createElement("p");
+	const textNode = document.createTextNode("Welcome to BigPig")
+	p.setAttribute("id","text");	
+	p.appendChild(textNode);
+	div.style.cssText = "width: 100px; height: 100px; background-color: red;";
+
+	document.body.appendChild(div);
+	div.appendChild(p);
+
+	console.log(div);
+
+--------------------------------------------------------------------------------------------
+-->: Exercise (append Child nodes)
+	
+	const smartPhone = ["iPhone","Samsung","LG","Sony",];
+
+	const ul = document.createElement("ul");
+
+
+	-->:forEach
+		smartPhone.forEach(function(i){
+    		const li = document.createElement("li")
+    		li.textContent = i;
+    		ul.appendChild(li);
+	})
+
+
+	-->:for
+		for(let i=0; i<smartPhone.length;i++){
+     		const li = document.createElement("li")
+     		li.textContent = smartPhone[i];
+     		ul.appendChild(li);
+ 	}
+
+
+document.body.appendChild(ul);
+
+console.log(ul);
+--------------------------------------------------------------
+
+-->: insertBefore replaceChild (DOM Child = Document Object Model)
+
+	const span = document.createElement("span");
+	const div = document.createElement("div");
+	const div2 = document.createElement("div");
+	const button = document.createElement("button");
+
+	document.body.append(div,div2, button);
+ 	// document.body.insertBefore(span, div2);
+
+	document.body.replaceChild(span,div2);
+
+	console.log(document.body)
+-----------------------------------------------------------
+
+--> 	remove and removeChild
+
+	const span = document.createElement("span");
+	const div = document.createElement("div");
+	const button = document.createElement("button");
+
+	document.body.append(div, button, span);
+	document.body.removeChild(button);//removeChild
+	div.remove(); //remove
+
+	console.log(document.body);
+--------------------------------------------------------------
+--> exercise (overview)
+
+	->HTML:
+		<section class="container">
+        		!-- <article class="user">
+            			<h3>BigPig</h3>
+            			<p>26 years old</p>
+            			<p>Bigpig@gmail.com</p>
+        		</article> -->
+    		</section>
+    	->CSS:
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    background-color: black;
+    color: rgb(163, 163, 163);
+}
+.container {
+    padding: 1rem;
+    display: grid;
+    gap: 0.7rem;
+}
+@media  screen and (min-width: 768px) {
+    .container {
+        padding: 1.5rem;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (min-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+.user:nth-child(odd){
+    background: linear-gradient(
+        to top right,
+        rgb(44,39, 28),
+        rgb(33, 33, 33)
+    );
+}
+.user {
+    background: linear-gradient(
+        to top left,
+        rgb(45,40,30),
+        rgb(33,33,33)
+    );
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    border: 2px solid rgb(82,82,82);
+    transition: border 0.15s ease-in-out;
+}
+.user:hover {
+    /* border-color: rgb(149, 149,149); */
+    border-color: white;
+}
+.user > h3 {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    color: gold;
+    opacity: 0.9;
+}
+.user > p {
+    font-size: 1.5rem;
+}
+.user > p:nth-child(2) {
+    margin: 10px 0;
+}
+
+
+	->JS:
+		// const container = document.querySelector(".container");
+const userData = [
+    {
+        name: "BigPig",
+        age: 22,
+        email: "BigPig@gmail.com"
+    },
+    {
+        name: "Boss",
+        age: 26,
+        email: "Boss@gmail.com"
+    },
+    {
+        name: "Max",
+        age: 32,
+        email: "Max621@gmail.com"
+    },
+    {
+        name: "Sam",
+        age: 45,
+        email: "Sam123@gmail.com"
+    },
+    {
+        name: "John",
+        age: 18,
+        email: "John13@gmail.com"
+    },
+    {
+        name: "Jack",
+        age: 20,
+        email: "Jack18@gmail.com"
+    },
+    {
+        name: "Max",
+        age: 32,
+        email: "Max621@gmail.com"
+    },
+    {
+        name: "Sam",
+        age: 45,
+        email: "Sam123@gmail.com"
+    },
+    {
+        name: "John",
+        age: 18,
+        email: "John13@gmail.com"
+    },
+    {
+        name: "Jack",
+        age: 20,
+        email: "Jack18@gmail.com"
+    },
+];
+const users = userData.map(function (user){
+    return `<article class="user">
+            <h3>${user.name}</h3>
+            <p>${user.age}year old</p>
+            <p>${user.email}</p>
+        </article>`;
+}).join("");
+
+// const userString = users.join("");
+// container.innerHTML = users;
+document.querySelector(".container").innerHTML = users;
+
+console.log(users)
+-------------------------------------------------------------
+--> Event Onclick
+	-->JS: // Event onclick
+
+const btn = document.querySelector(".button");
+
+function showing () {
+    console.log("click here")
+}
+btn.addEventListener("click",function(){
+    console.log("hello world")
+});
+
+	--> HTML: 
+		<button onclick="showing()">Click here</button>
+----------------------------------------------------------------------
+-->: currentTarget // Target
+
+	Javascript:
+		->	const container = document.querySelector(".container");
+
+	container.addEventListener("click",function(e){
+    console.log(e.target);
+	});
+	HTML:
+		-> <div class="container">
+        <h3>BigPig</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <button>Click</button>
+    </div>
+------------------------------------------------------------------
+--> Exercise (model)
+
+	-->: HTML:
+		-> <section class="hero-section">
+        	<button class="show-btn">Open Model</button>
+        	<!--model box-->
+        	<div class="bg-overlay">
+            	<div class="model">
+                	<h3>BigPig</h3>
+                	<button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+            	</div>
+        	</div>
+    	</section>
+
+	-->: CSS: 
+		->body { 
+    font-family: 'Courier New', Courier, monospace;
+}
+.hero-section{
+    height: 100vh;
+    background-image: url("./anime-girl-with-white-hair-hd-wallpaper-uhdpaper.com-693@2@b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+.show-btn{
+    margin-top: 50px;
+    margin-left: 650px;
+    background-color: rgb(255, 255, 255, 0.7);
+    color: rgb(11,63,116);
+    letter-spacing: 2px;
+    backdrop-filter: blur(10px);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 1rem 2.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.show-btn:hover {
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 5px 15px 40px rgba(19,42,66,0.4);
+}
+.close-btn {
+    color: rgb(68,68,68);
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.close-btn:hover {
+    transform: rotate(90deg)
+}
+.bg-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0, 0.7);
+    visibility: hidden ;
+}
+.model {
+    position: relative;
+    width: 400px;
+    height: 250px;
+    background-color: rgba(255,255,255, 0.5);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgb(144,144,144);
+    transform: scale(1,0);
+    opacity: 0;
+    filter: blur(30px);
+    transition: all 0.2s ease;
+}
+.model.active {
+    transform: scale(1,1);
+    opacity: 1;
+    filter: blur(0);
+}
+.model > h3{
+    color: black;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    opacity: 0.5;
+    margin-top: 100px;
+}
+	-->:JS: 
+		->const showBtn = document.querySelector(".show-btn");
+const closeBtn = document.querySelector(".close-btn");
+const overlayBg = document.querySelector(".bg-overlay");
+const model = document.querySelector(".model");
+
+function toggleModel(isShow){
+    if(isShow){
+        overlayBg.style.visibility = "visible";
+        model.classList.add("active");
+    }else{
+        overlayBg.style.visibility = "hidden";
+        model.classList.remove("active");
+    }
+}
+
+showBtn.addEventListener("click", () => toggleModel(true));
+closeBtn.addEventListener("click", () => toggleModel(false));
+overlayBg.addEventListener("click", function(e){
+    if(e.target === overlayBg){
+        toggleModel(false);
+    }
+});
+--------------------------------------------------------------------------------
+-->: event bubling
+
+const div = document.querySelector("div");
+const h1 = document.querySelector("h1");
+const p = document.querySelector("p");
+const button = document.querySelector("button");
+
+div.addEventListener("click", function(){
+    console.log("div");
+});
+button.addEventListener("click", function(event){
+    event.stopPropagation();
+    console.log("button");
+});
+document.body.addEventListener("click",function(){
+    console.log("body");
+});
+
+	-->:HTML
+		-> <div>
+        <h1>BigPig</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <button>Submit</button>
+    </div>
+------------------------------------------------
+-->: PreventDefault() from submite
+
+	-->: JS:
+		->const form = document.querySelector("form");
+form.addEventListener("submit", function(e){
+    e.preventDefault();
+    console.log(form.firstElementChild.value);
+})
+-------------------------------------------------------------------
+-->: PreventDefault() from submite
+
+	-->JS:
+		->const form = document.querySelector("form");
+form.addEventListener("submit", function(e){
+    e.preventDefault();
+    console.log(form.firstElementChild.value);
+});
+
+	-->: HTML:
+		->: <form action="">
+        <input type="text">
+        <input type="submit" value="submite">
+    </form>
+-------------------------------------------------------------------
+
+--> offsetX.Y, clientX.Y, apgeX.Y
+
+	-->: JS:
+		->	const box = document.querySelector(".box")
+
+box.addEventListener("click", function(e){
+    console.log(e.offsetY);
+    console.log(e.clientY);
+});
+	-->: HTML:
+		->: <div class="box"></div>
+
+-------------------------------------------------------
+-->: Exercise (counting)
+
+const startBtn = document.querySelector(".start");
+const stopBtn = document.querySelector(".stop");
+const counter = document.getElementById("counter");
+
+let n = 0;
+let intervalId = null;
+
+function counting () {
+    counter.textContent = n;
+    n++;
+}
+function startCounting (){
+    if (intervalId !==null){
+        clearInterval(intervalId);
+    } 
+    intervalId = setInterval(counting,1000);
+    console.log(intervalId);
+}   
+function stopCounting () {
+    clearInterval(intervalId);
+    console.log(intervalId);
+
+}
+stopBtn.addEventListener("click", stopCounting);
+startBtn.addEventListener("click", startCounting);
+
+startCounting();
+	->: HTML :
+		<div class="wrapper">
+        <div id="counter">Counter</div>
+        <div class="btns">
+            <button class="start">Start</button>
+            <button class="stop">Stop</button>
+        </div>
+    </div>
+--------------------------------------------------------------------
+
+->: Storage Browser API
+
+localStorage.setItem("name","hello world");
+localStorage.setItem("address","USA");
+localStorage.setItem("phone","46132");
+
+if (true) {
+    localStorage.removeItem("address");
+}
+----------------------------------------------------------
+->: Store data as array (JSON format)
+
+const address = ["PP","KP","KD"]
+
+
+localStorage.setItem("address", JSON.stringify(address));
+
+=> we use JSON.stringify for convert array to string but we can't use string yet we use JSON.parse onemore so we can use it.
+
+const result = JSON.parse(localStorage.getItem("address"));
+
+
+console.log(result);
+---------------------------------------------------------------------
+
+
+
+
+    		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

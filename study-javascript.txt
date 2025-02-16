@@ -28,4 +28,3 @@ node --watch and put the folder name : it mean when you change the code the term
 	->Primitive:String,Number,Boolean,Null,Undefiend,Symbol(es6)
 	->None-primitive(object) : Function,Array,object
 
-->Higher Order:
