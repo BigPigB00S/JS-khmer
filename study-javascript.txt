@@ -15,7 +15,7 @@ node --watch and put the folder name : it mean when you change the code the term
 
 -> var let cosnt
 	let & cosnt is block-scope
-	let(when we decale we can resign the variable
+	let(when we decale we can resign the variable)
 	const(we can't resign)
 
 ->operators
