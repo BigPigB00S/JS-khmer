@@ -1053,6 +1053,42 @@ const result = JSON.parse(localStorage.getItem("address"));
 
 console.log(result);
 ---------------------------------------------------------------------
+//Javascript ES6 (BigUpdate 2015)
+=>: Arrow Function
+
+// document.addEventListener("click",()=> console.log("helloo")); // =>: Arrow Function
+
+const obj ={
+    name: "BigPig",
+    print :()=>{
+        console.log("print");
+    },
+};
+------------------------------------------------------------
+
+->: This (Regular Function)
+
+document.body.addEventListener("click", function(){
+    this.style.background = "blue";
+});
+
+------------------------------------------------------
+
+->:This (Arrow Function)
+
+const obj = {
+    name: "Bigpig",
+    print  () {
+        setTimeout(() => console.log(this),1000);
+
+    },
+};
+obj.print();
+
+
+
+
+
 
 
 

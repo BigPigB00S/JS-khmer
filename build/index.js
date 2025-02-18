@@ -1,13 +1,12 @@
 // ES6 (Big Update 2015)
-//Template & tagged template literal
+//call apply  bind method
 
-function tagFunC(str,n,a) {
-    const checkAge = a > 17 ? "Adult" : "a monor";
-    return `${str[0]}${n}${str[1]} ${a} ${checkAge}`;
+function printName (greeting) {
+    console.log(`${greeting}, ${this.name}`);
 }
-const name = "Bigpig";
-const age = 30;
+const person1 = {name: "Hello world"};
+const person2 = {name: "Hello "};
 
-const print = tagFunC`hello ${name} you're ${age}`;
 
-console.log(print);
+
+printName.call(person2, "HI");
