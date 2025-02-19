@@ -1085,6 +1085,82 @@ const obj = {
 };
 obj.print();
 
+----------------------------------------------------------------
+=>: call apply  bind method
+
+function printName (greeting, sign) {
+    console.log(`${greeting} ${this.name}${sign}`);
+}
+const person1 = {name: "Sok"};
+const person2 = {name: "Heng "};
+
+
+
+const print = printName.bind(person2 , "hello world","!")
+print ();
+
+//call: is simple
+//apply: is have array and useful
+//bind: can call the function
+
+------------------------------------------------------------------------
+
+=>: Default parameter
+
+const print = (name = " bigpig") => console.log(name);
+
+print(); //you can't put print on top;
+
+----------------------------------------------------------------------
+
+=>: Array Destructuring
+
+const phones = ["Iphone","Samsung","OneMe","OPPO","Nokia"];
+
+const [PhoneOne,PhoneTwo,PhoneThree,PhoneFour,PhoneFive] = phones;
+
+console.log(PhoneOne,PhoneTwo,PhoneThree,PhoneFour,PhoneFive);
+-------------------------------------------------------------------------
+
+=>: Object (ES6 Features)
+
+const obj = {
+    name: "Bigpig",
+    print () {
+        console.log("print");
+    },
+
+};
+
+Object.freeze(obj); // is mean we freeze something
+
+obj.name = "Heng";
+console.log(obj.name);
+
+---------------------------------------------------------------------------
+=>:Object Destructuring
+
+const user = {
+    name: "BigPig",  
+    job: "student",
+    contact: {
+        phone: "086769670",
+        email: "Bigpig@gmail.com"
+    },
+
+};
+
+const {name: userName, contact: {phone,email}} = user;
+
+console.log(userName,phone,email);
+------------------------------------------------------------------------
+
+
+
+
+
+
+
 
 
 

@@ -1,12 +1,16 @@
 // ES6 (Big Update 2015)
-//call apply  bind method
+//Object Destructuring
 
-function printName (greeting) {
-    console.log(`${greeting}, ${this.name}`);
-}
-const person1 = {name: "Hello world"};
-const person2 = {name: "Hello "};
+const user = {
+    name: "BigPig",  
+    job: "student",
+    contact: {
+        phone: "086769670",
+        email: "Bigpig@gmail.com"
+    },
 
+};
 
+const {name: userName, contact: {phone,email}} = user;
 
-printName.call(person2, "HI");
+console.log(userName,phone,email);
