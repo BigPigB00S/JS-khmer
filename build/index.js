@@ -1,16 +1,9 @@
 // ES6 (Big Update 2015)
-//Object Destructuring
+//For of loop
 
-const user = {
-    name: "BigPig",  
-    job: "student",
-    contact: {
-        phone: "086769670",
-        email: "Bigpig@gmail.com"
-    },
+const phones = ["Iphone","Samsung","OneMe","OPPO","Nokia"];
 
-};
-
-const {name: userName, contact: {phone,email}} = user;
-
-console.log(userName,phone,email);
+for (const phone of phones){
+    if (phone === "OneMe") continue;
+    console.log(phone);
+}

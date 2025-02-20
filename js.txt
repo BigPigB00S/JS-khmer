@@ -1155,6 +1155,18 @@ const {name: userName, contact: {phone,email}} = user;
 console.log(userName,phone,email);
 ------------------------------------------------------------------------
 
+=>: Object Destructuring (in function)
+
+const userOne = {name:"Bigpig", address: "KomPot"};
+const userTwo = {name:"Sok", address: "Phnom Penh"};
+
+function print ({name, address: userAddress}) { // name: you can change name to something that you can call
+    console.log(`name: ${name}, address:${userAddress}`)
+}
+print (userOne);
+
+
+
 
 
 
