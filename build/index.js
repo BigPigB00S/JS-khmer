@@ -1,8 +1,9 @@
 // ES6 (Big Update 2015)
-//For of loop
+//array-spread operator
 
-const phones = ["Iphone","Samsung","OneMe","OPPO","Nokia"];
+const buttons = document.querySelectorAll("button");
 
+<<<<<<< HEAD
 for (const phone of phones){
     if (phone === "OneMe") continue;
     console.log(phone);
@@ -10,3 +11,11 @@ for (const phone of phones){
 
 //continue: mean skip
 //break: 
+=======
+const allButton = [...buttons];
+const allButton = buttons.map(function (btn){
+    return btn;
+});
+
+console.log(allButton);
+>>>>>>> 60f8a83908aba15dce2ad35ce8e2c11bf3ff4396
