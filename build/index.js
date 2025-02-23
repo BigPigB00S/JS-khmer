@@ -7,3 +7,6 @@ for (const phone of phones){
     if (phone === "OneMe") continue;
     console.log(phone);
 }
+
+//continue: mean skip
+//break: 
