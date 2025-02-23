@@ -1,9 +1,11 @@
 // ES6 (Big Update 2015)
-//For of loop
+//array-spread operator
 
-const phones = ["Iphone","Samsung","OneMe","OPPO","Nokia"];
+const buttons = document.querySelectorAll("button");
 
-for (const phone of phones){
-    if (phone === "OneMe") continue;
-    console.log(phone);
-}
+const allButton = [...buttons];
+const allButton = buttons.map(function (btn){
+    return btn;
+});
+
+console.log(allButton);
