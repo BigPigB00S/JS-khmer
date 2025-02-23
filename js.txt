@@ -1165,6 +1165,33 @@ function print ({name, address: userAddress}) { // name: you can change name to 
 }
 print (userOne);
 
+--------------------------------------------------------------
+=>:For of loop
+
+const phones = ["Iphone","Samsung","OneMe","OPPO","Nokia"];
+
+for (const phone of phones){
+    if (phone === "OneMe") continue;
+    console.log(phone);
+}
+
+//continue: mean skip
+//break: 
+------------------------------------------------------------------
+
+=>: array-spread operator
+const buttons = document.querySelectorAll("button");
+
+const allButtonsArray = [...buttons]; // Converts NodeList to array
+const allButtonsMapped = Array.from(buttons).map(function(btn) {
+    return btn;
+});
+
+console.log(allButtonsArray);
+console.log(allButtonsMapped);
+
+//...: mean copy
+
 
 
 
