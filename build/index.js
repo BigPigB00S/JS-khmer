@@ -1,11 +1,11 @@
 // ES6 (Big Update 2015)
-//Object -spread operator
+//Array vs set
 
-const car = {
-    brand: "BMW",
-    model: "6 Series"
-};
+const setList = new Set (["BMW","Ford", "Toyota","Ford"]);
 
-const myCar = {...car};
+//convert set to array
 
-console.log(myCar,car);
+const cars = [...setList];
+
+console.log(cars[0]);
+
