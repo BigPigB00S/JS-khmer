@@ -1,11 +1,31 @@
 // ES6 (Big Update 2015)
-//Array vs set
+//132. object vs map
 
-const setList = new Set (["BMW","Ford", "Toyota","Ford"]);
+const  mapObject = new Map ([
+    ["name", "BigPig"],
+    ["age",23],
+    [2, "this is number"],
+]);
 
-//convert set to array
+console.log(mapObject);
 
-const cars = [...setList];
 
-console.log(cars[0]);
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
