@@ -1,16 +1,16 @@
 // ES6 (Big Update 2015)
-//132. object vs map
+//array methods (more)
 
-const  mapObject = new Map ([
-    ["name", "BigPig"],
-    ["age",23],
-    [2, "this is number"],
-]);
+const myArray = ["a","b","c","d"];
 
-console.log(mapObject);
+const result = myArray.includes("a");
 
+console.log(result)
 
-
+//find: find value
+//findIndex :mean find index
+//every: mean is the same ban vea jenh true
+//same: it have and than true
 
 
     
